@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IceCreamTestDrive",
+            "request": "launch",
+            "mainClass": "IceCreamTestDrive",
+            "projectName": "factory-practice"
+        }
+    ]
+}
