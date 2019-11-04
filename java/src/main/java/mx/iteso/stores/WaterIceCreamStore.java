@@ -2,18 +2,25 @@ package mx.iteso.stores;
 
 import mx.iteso.IceCreamStore;
 import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.water.*;
+import mx.iteso.icecreams.water.StrawberryWaterIceCream;
+import mx.iteso.icecreams.water.PineappleWaterIceCream;
+import mx.iteso.icecreams.water.MangoWaterIceCream;
+import mx.iteso.icecreams.water.GuavaWaterIceCream;
 
+/**
+ * Tienda de nieve de agua.
+ */
 public class WaterIceCreamStore extends IceCreamStore {
+
     @Override
-    protected IceCream createIceCream(String flavor){
-        if(flavor.equals("Strawberry")){
+    protected final IceCream createIceCream(final String flavor) {
+        if (flavor.equals("Strawberry")) {
             return new StrawberryWaterIceCream();
-        } else if (flavor.equals("Pineapple")){
+        } else if (flavor.equals("Pineapple")) {
             return new PineappleWaterIceCream();
-        } else if (flavor.equals("Mango")){
+        } else if (flavor.equals("Mango")) {
             return new MangoWaterIceCream();
-        } else if (flavor.equals("Guava")){
+        } else if (flavor.equals("Guava")) {
             return new GuavaWaterIceCream();
         }
         return null;

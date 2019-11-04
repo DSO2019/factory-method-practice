@@ -4,18 +4,34 @@ import mx.iteso.icecreams.IceCream;
 
 import java.util.ArrayList;
 
+/**
+ * Clase cono.
+ */
 public class Cone {
-    ArrayList<IceCream> icecreams = new ArrayList<IceCream>();
+    /**
+     * Bolas de nieves del cono.
+     */
+    private ArrayList<IceCream> icecreams = new ArrayList<IceCream>();
 
-    public void prepare() {
+    /**
+     * Preparar un cono.
+     */
+    public final void prepare() {
         System.out.print("Makinh the cone... yummy");
     }
 
-    public void addIceCream(IceCream iceCream) {
+    /**
+     * Añadir Nieve.
+     * @param iceCream helado a agregar.
+     */
+    public final void addIceCream(final IceCream iceCream) {
         icecreams.add(iceCream);
     }
 
-    public void serve() {
+    /**
+     * Servir cono.
+     */
+    public final void serve() {
         System.out.print("Serving...");
     }
 }

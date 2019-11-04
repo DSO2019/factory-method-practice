@@ -8,10 +8,21 @@ package mx.iteso.icecreams;
  * To change this template use File | Settings | File Templates.
  */
 public class IceCream {
-    public String name;
-    public String type;
+    /**
+     * Nombre de nieve.
+     */
+    protected String name;
 
-    public String getName(){
+    /**
+     * Tipo de nieve.
+     */
+    protected String type;
+
+    /**
+     * Regresar el nombre.
+     * @return nombre.
+     */
+    public final String getName() {
         return name;
     }
 }
