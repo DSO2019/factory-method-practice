@@ -11,7 +11,7 @@ public class IceCream {
 /**
  * Name variable.
  */
-private String name;
+private String name = "Any IceCream";
 /**
  * Get Name function.
  * @return name.
