@@ -11,32 +11,31 @@ import static org.mockito.Matchers.eq;
 import mx.iteso.stores.*;
 
 
-
-public class MilkIceCreamStoreTest{
-    MilkIceCreamStore milkStore;
+public class YougurtIceCreamStoreTest{
+    YougurtIceCreamStore yougurtStore;
 
     @Before
     public void setUp(){
-        milkStore = new MilkIceCreamStore();
+        yougurtStore = new YougurtIceCreamStore();
     }
 
     @Test
     public void strawberryTest(){
-        assertEquals("Strawberry Milk Ice Cream", milkStore.prepareCone("Strawberry").getCone());
+        assertEquals("Strawberry Yougurt Ice Cream", yougurtStore.prepareCone("Strawberry").getCone());
     }
 
     @Test
     public void guavaTest(){
-        assertEquals("Guava Milk Ice Cream", milkStore.prepareCone("Guava").getCone());
+        assertEquals("Guava Yougurt Ice Cream", yougurtStore.prepareCone("Guava").getCone());
     }
 
     @Test
     public void mangoTest(){
-        assertEquals("Mango Milk Ice Cream", milkStore.prepareCone("Mango").getCone());
+        assertEquals("Mango Yougurt Ice Cream", yougurtStore.prepareCone("Mango").getCone());
     }
 
     @Test
     public void pineappleTest(){
-        assertEquals("Pineapple Milk Ice Cream", milkStore.prepareCone("Pineapple").getCone());
+        assertEquals("Pineapple Yougurt Ice Cream", yougurtStore.prepareCone("Pineapple").getCone());
     }
 }

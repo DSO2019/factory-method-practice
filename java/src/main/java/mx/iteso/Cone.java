@@ -34,4 +34,16 @@ public class Cone {
     public final void serve() {
         System.out.print("Serving...");
     }
+
+    /**
+     * Get a cone.
+     * @return nieve del cono.
+     */
+    public final String getCone() {
+        String ic = "";
+        for(int i = 0; i < icecreams.size(); i++){
+            ic += icecreams.get(i).getName();
+        }
+        return ic;
+    } 
 }

@@ -12,31 +12,31 @@ import mx.iteso.stores.*;
 
 
 
-public class MilkIceCreamStoreTest{
-    MilkIceCreamStore milkStore;
+public class WaterIceCreamStoreTest{
+    WaterIceCreamStore waterStore;
 
     @Before
     public void setUp(){
-        milkStore = new MilkIceCreamStore();
+        waterStore = new WaterIceCreamStore();
     }
 
     @Test
     public void strawberryTest(){
-        assertEquals("Strawberry Milk Ice Cream", milkStore.prepareCone("Strawberry").getCone());
+        assertEquals("Strawberry Water Ice Cream", waterStore.prepareCone("Strawberry").getCone());
     }
 
     @Test
     public void guavaTest(){
-        assertEquals("Guava Milk Ice Cream", milkStore.prepareCone("Guava").getCone());
+        assertEquals("Guava Water Ice Cream", waterStore.prepareCone("Guava").getCone());
     }
 
     @Test
     public void mangoTest(){
-        assertEquals("Mango Milk Ice Cream", milkStore.prepareCone("Mango").getCone());
+        assertEquals("Mango Water Ice Cream", waterStore.prepareCone("Mango").getCone());
     }
 
     @Test
     public void pineappleTest(){
-        assertEquals("Pineapple Milk Ice Cream", milkStore.prepareCone("Pineapple").getCone());
+        assertEquals("Pineapple Water Ice Cream", waterStore.prepareCone("Pineapple").getCone());
     }
 }

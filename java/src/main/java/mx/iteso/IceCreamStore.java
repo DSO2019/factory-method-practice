@@ -1,6 +1,7 @@
 package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
+import mx.iteso.Cone;
 
 /**
  * Created with IntelliJ IDEA.

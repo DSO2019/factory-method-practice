@@ -1,4 +1,4 @@
-from IceCream import *
+from icecreams.IceCream import *
 
 class GuavaMilkIceCream(IceCream):
 
