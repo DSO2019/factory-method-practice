@@ -11,7 +11,7 @@ import static org.junit.Test;
  * Ice Cream Test class.
  */
 public class IceCreamTest(){
-    private IceCream iC;
+    private IceCream ic;
 
     /**
      * Set up method.

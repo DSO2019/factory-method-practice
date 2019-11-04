@@ -11,10 +11,7 @@ import static org.junit.Test;
  * Water Store Test class.
  */
 public class WaterStoreTest {
-    private IceCream iC;
-    private MilkStore milkStore;
     private WaterStore waterStore;
-    private YoghurtStore yoghurtStore;
     private Cone cone;
 
     /**
@@ -22,10 +19,8 @@ public class WaterStoreTest {
      */
     @Before
     public void SetUp(){
-        ic = new IceCream();
-        milkStore = new MilkStore();
         waterStore = new WaterStore();
-        yoghurtStore = new YoghurtStore();
+        cone = new Cone();
     }
     /**
      * Water bases ice cream test.

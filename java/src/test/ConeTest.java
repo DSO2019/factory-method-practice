@@ -11,7 +11,7 @@ import static org.junit.Test;
  * Cone test class.
  */
 public class ConeTest {
-    IceCream iC;
+    IceCream ic;
     Cone cone;
     /**
      * Set up method.

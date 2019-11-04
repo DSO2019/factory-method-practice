@@ -13,8 +13,9 @@ private IceCream iC;
 /**
  * Prepare method.
  */
-public void prepare() {
+public String prepare() {
 System.out.println("Preparing cone");
+return "Preparing cone";
 }
 /**
  * Adding ice cream method.
@@ -26,8 +27,9 @@ this.iC = iceCream;
 /**
  * Serving method.
  */
-public void serve() {
+public String serve() {
 System.out.println("Serving..." + iC.getName());
+return "Serving..." + iC.getName();
 }
 /**
  * @return ice cream. Get ice cream method.

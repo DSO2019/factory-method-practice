@@ -1,0 +1,11 @@
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.exe
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.deps.json
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.runtimeconfig.json
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.runtimeconfig.dev.json
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.dll
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\bin\Debug\netcoreapp3.0\factory_method.pdb
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\obj\Debug\netcoreapp3.0\factory_method.csprojAssemblyReference.cache
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\obj\Debug\netcoreapp3.0\factory_method.AssemblyInfoInputs.cache
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\obj\Debug\netcoreapp3.0\factory_method.AssemblyInfo.cs
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\obj\Debug\netcoreapp3.0\factory_method.dll
+C:\Users\Bernardo Elizondo\Desktop\factory-method-practice\csharp\factory_method\obj\Debug\netcoreapp3.0\factory_method.pdb
