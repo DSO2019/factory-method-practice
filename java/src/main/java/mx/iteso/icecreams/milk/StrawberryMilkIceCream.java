@@ -2,8 +2,14 @@ package mx.iteso.icecreams.milk;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ * Strawberry Milk Ice Cream class.
+ */
 public class StrawberryMilkIceCream extends IceCream {
-	public StrawberryMilkIceCream() {
-		name = "Strawberry Milk Ice Cream";
-	}
+/**
+ * Constructor.
+ */
+public StrawberryMilkIceCream() {
+name = "Strawberry Milk Ice Cream";
+}
 }

@@ -1,14 +1,6 @@
 package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.milk.GuavaMilkIceCream;
-import mx.iteso.icecreams.milk.MangoMilkIceCream;
-import mx.iteso.icecreams.milk.PineappleMilkIceCream;
-import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
-import mx.iteso.icecreams.water.GuavaWaterIceCream;
-import mx.iteso.icecreams.water.MangoWaterIceCream;
-import mx.iteso.icecreams.water.PineappleWaterIceCream;
-import mx.iteso.icecreams.water.StrawberryWaterIceCream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,19 +10,22 @@ import mx.iteso.icecreams.water.StrawberryWaterIceCream;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class IceCreamStore {
-    public Cone prepareCone(String flavor){
-    	IceCream iceCream;
+    /**
+     * @return Cone. PrepareCone function.
+     * @param flavor IceCream flavor.
+     */
+    public Cone prepareCone(final String flavor) {
+        IceCream iceCream;
         Cone cone = new Cone();
-      
         iceCream = createIceCream(flavor);
-
         cone.prepare();
         cone.addIceCream(iceCream);
         cone.serve();
-        
         return cone;
     }
-    
-    protected abstract IceCream createIceCream(String flavor);    
-
+    /**
+     * @return IceCream. Creates ice cream of a certain flavor.
+     * @param flavor IceCream flavor.
+     */
+    protected abstract IceCream createIceCream(String flavor);
 }
