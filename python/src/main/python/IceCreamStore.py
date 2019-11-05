@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from Cone import *
 
+
 class IceCreamStore(ABC):
 
     def __init__(self):
@@ -13,7 +14,7 @@ class IceCreamStore(ABC):
     def prepareCone(flavor):
         cone = Cone()
 
-        cone.prepare() 
+        cone.prepare()
         iceCream = self.createIceCream(flavor)
         cone.addIceCream(iceCream)
         cone.serve()

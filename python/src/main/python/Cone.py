@@ -6,10 +6,10 @@ class Cone:
 
     def prepare():
         print("Making the cone")
-    
+
     def addIceCream(iceCream):
         self.icecreams.append(iceCream)
-    
+
     def serve():
         print("Serving...")
 

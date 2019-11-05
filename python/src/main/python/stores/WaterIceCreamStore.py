@@ -1,17 +1,20 @@
 from IceCreamStore import *
 from icecreams.water import *
 
+
 class WaterIceCreamStore(IceCreamStore):
 
     def createIceCream(flavor):
-        if flavor == "Strawberry" :
+        if flavor == "Strawberry":
             return StrawberryWaterIceCream()
-        else if flavor == "Pineapple" :
+        else if flavor == "Pineapple":
             return PineappleWaterIceCream()
-        else if flavor == "Mango" :
+        else if flavor == "Mango":
             return MangoWaterIceCream()
-        else if flavor == "Guava" :
+        else if flavor == "Guava":
             return GuavaWaterIceCream()
-        
+
         return None
-    
+
+    def prepareCone(flavor):
+        super().prepareCone(flavor)

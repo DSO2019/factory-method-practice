@@ -1,24 +1,23 @@
 from IceCreamStore import IceCreamStore
 from icecreams.milk import *
 
+
 class MilkIceCreamStore(IceCreamStore):
 
     def __init__(self):
         super().__init__()
 
     def createIceCream(flavor):
-        if flavor == "Strawberry" :
+        if flavor == "Strawberry":
             return StrawberryMilkIceCream()
-        elif flavor == "Pineapple" :
+        elif flavor == "Pineapple":
             return PineappleMilkIceCream()
-        elif flavor == "Mango" :
+        elif flavor == "Mango":
             return MangoMilkIceCream()
-        elif flavor == "Guava" :
+        elif flavor == "Guava":
             return GuavaMilkIceCream()
-        
+
         return None
-    
+
     def prepareCone(flavor):
         super().prepareCone(flavor)
-    
-            
