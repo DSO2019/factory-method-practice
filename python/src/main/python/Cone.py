@@ -12,3 +12,9 @@ class Cone:
     
     def serve():
         print("Serving...")
+
+    def getCone():
+        ic = ""
+        for i in self.icecreams:
+            ic += i.getName()
+        return ic

@@ -3,6 +3,9 @@ from Cone import *
 
 class IceCreamStore(ABC):
 
+    def __init__(self):
+        pass
+
     @abstractmethod
     def createIceCream(flavor):
         pass
