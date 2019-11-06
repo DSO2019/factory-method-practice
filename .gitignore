@@ -2,3 +2,6 @@
 *.iml
 .idea/
 target/
+python/target
+.coverage
+*.pyc
