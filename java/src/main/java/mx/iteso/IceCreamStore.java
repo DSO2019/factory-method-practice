@@ -9,6 +9,10 @@ import mx.iteso.icecreams.water.GuavaWaterIceCream;
 import mx.iteso.icecreams.water.MangoWaterIceCream;
 import mx.iteso.icecreams.water.PineappleWaterIceCream;
 import mx.iteso.icecreams.water.StrawberryWaterIceCream;
+import mx.iteso.icecreams.yogurt.GuavaYogurtIceCream;
+import mx.iteso.icecreams.yogurt.MangoYogurtIceCream;
+import mx.iteso.icecreams.yogurt.PineappleYogurtIceCream;
+import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,50 +21,32 @@ import mx.iteso.icecreams.water.StrawberryWaterIceCream;
  * Time: 1:21 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IceCreamStore {
+public abstract class IceCreamStore {
 
-    public IceCream createMilkIceCream(String flavor){
+    /**
+     *
+     * @param flavor adds the flavor.
+     * @return ice cream created
+     */
+    protected abstract IceCream createIceCream(String flavor);
 
-        if(flavor.equals("Strawberry")){
-            return new StrawberryMilkIceCream();
-        } else if (flavor.equals("Pineapple")){
-            return new PineappleMilkIceCream();
-        } else if (flavor.equals("Mango")){
-            return new MangoMilkIceCream();
-        } else if (flavor.equals("Guava")){
-            return new GuavaMilkIceCream();
-        }
-        return null;
-    }
-
-    public IceCream createWaterIceCream(String flavor){
-
-        if(flavor.equals("Strawberry")){
-            return new StrawberryWaterIceCream();
-        } else if (flavor.equals("Pineapple")){
-            return new PineappleWaterIceCream();
-        } else if (flavor.equals("Mango")){
-            return new MangoWaterIceCream();
-        } else if (flavor.equals("Guava")){
-            return new GuavaWaterIceCream();
-        }
-        return null;
-    }
-
-    public void prepareCone(String base, String flavor){
+    /**
+     *  @param base adds ice cream base (milk or water).
+     * @param flavor adds ice cream flavor.
+     * @return creted cone.
+     */
+    public Cone prepareCone(String base, String flavor){
         IceCream iceCream = new IceCream();
         Cone cone = new Cone();
 
         cone.prepare();
 
-        if (base.equals("milk")){
-            iceCream = createMilkIceCream(flavor);
-        } else if (base.equals("water")){
-            iceCream = createWaterIceCream(flavor);
-        }
+        iceCream = createIceCream(flavor);
+
         cone.addIceCream(iceCream);
         cone.serve();
 
+        return cone;
     }
 
 }
