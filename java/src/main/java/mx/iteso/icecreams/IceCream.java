@@ -1,11 +1,26 @@
 package mx.iteso.icecreams;
 
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 10/17/13
- * Time: 2:24 PM
- * To change this template use File | Settings | File Templates.
+ * Abstract
  */
-public class IceCream {
+public abstract class IceCream {
+    /**
+     * flavor String.
+     */
+    private String flavor;
+
+    /**
+     * set flavor.
+     * @param flavor flavor passed
+     */
+    protected void setFlavor(final String flavor) {
+        this.flavor = flavor;
+    }
+
+    /**
+     * @return flavor.
+     */
+    public String getFlavor() {
+        return this.flavor;
+    }
 }
