@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "factory-metoth", "factory-metoth\factory-metoth.csproj", "{AB2D282C-A7E4-4A5D-9090-EFF8BA049666}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{171BE63E-7924-42A1-A845-5ABAD6BB239F}"
+	ProjectSection(SolutionItems) = preProject
+		Cone.cs = Cone.cs
+		IceCreamStore.cs = IceCreamStore.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{53CE3F23-325C-411F-84C1-98229155ADDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icecreams", "icecreams", "{3C159A84-7497-4C97-958A-38DD560D97F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stores", "stores", "{EF97C155-2ED9-45F7-9D0B-2807FDB170A9}"
+	ProjectSection(SolutionItems) = preProject
+		MilkIceCream.cs = MilkIceCream.cs
+		WaterIceCream.cs = WaterIceCream.cs
+		YogurtIceCreamStore.cs = YogurtIceCreamStore.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "water", "water", "{F5BDA064-B778-4EE8-A02E-C7341C0DFCBE}"
+	ProjectSection(SolutionItems) = preProject
+		GuavaWaterIceCream.cs = GuavaWaterIceCream.cs
+		MangoWaterIceCream.cs = MangoWaterIceCream.cs
+		PineappleWaterIceCcream.cs = PineappleWaterIceCcream.cs
+		StrawberryWaterIceCream.cs = StrawberryWaterIceCream.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "milk", "milk", "{A50A7C89-164D-44A0-9034-1133F41C9BF9}"
+	ProjectSection(SolutionItems) = preProject
+		GuavaMilkIceCream.cs = GuavaMilkIceCream.cs
+		MangoMilkIceCream.cs = MangoMilkIceCream.cs
+		PineappleMilkIceCream.cs = PineappleMilkIceCream.cs
+		StrawberryMilkIceCream.cs = StrawberryMilkIceCream.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "yogurt", "yogurt", "{1E760705-ACAC-4EE9-B004-258E5A9DC870}"
+	ProjectSection(SolutionItems) = preProject
+		GuavaYogurtIceCream.cs = GuavaYogurtIceCream.cs
+		MangoYogurtIceCream.cs = MangoYogurtIceCream.cs
+		PineappleYogurtIceCream.cs = PineappleYogurtIceCream.cs
+		StrawberryYogurtIceCream.cs = StrawberryYogurtIceCream.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB2D282C-A7E4-4A5D-9090-EFF8BA049666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2D282C-A7E4-4A5D-9090-EFF8BA049666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2D282C-A7E4-4A5D-9090-EFF8BA049666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2D282C-A7E4-4A5D-9090-EFF8BA049666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C159A84-7497-4C97-958A-38DD560D97F7} = {171BE63E-7924-42A1-A845-5ABAD6BB239F}
+		{EF97C155-2ED9-45F7-9D0B-2807FDB170A9} = {171BE63E-7924-42A1-A845-5ABAD6BB239F}
+		{F5BDA064-B778-4EE8-A02E-C7341C0DFCBE} = {3C159A84-7497-4C97-958A-38DD560D97F7}
+		{A50A7C89-164D-44A0-9034-1133F41C9BF9} = {3C159A84-7497-4C97-958A-38DD560D97F7}
+		{1E760705-ACAC-4EE9-B004-258E5A9DC870} = {3C159A84-7497-4C97-958A-38DD560D97F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC203D79-F636-42DD-808C-9555797B015C}
+	EndGlobalSection
+EndGlobal
