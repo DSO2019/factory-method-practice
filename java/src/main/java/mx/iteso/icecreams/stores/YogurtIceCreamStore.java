@@ -5,20 +5,29 @@ import mx.iteso.icecreams.IceCream;
 
 
 /**
- * Created by Margarita Jauregui
+ * Created by Margarita Jauregui.
  * date: Nov 5, 2019
  */
 public class YogurtIceCreamStore extends IceCreamStore {
-    String base = "yogurt";
-    public IceCream createIceCream(String flavor){
+    /**
+     * Base type.
+     */
+    private final String base = "yogurt";
+
+    /**
+     * Creates yogurt-based IceCream.
+     * @param flavor selected
+     * @return icecream
+     */
+    public IceCream createIceCream(final String flavor) {
         IceCream yogurtIceCream = createYogurtIceCream(flavor);
         return yogurtIceCream;
     }
 
-    public void setBase(String base){
-        this.base = base;
-    }
-
+    /**
+     * Getter method for base.
+     * @return base type
+     */
     public String getBase() {
         return this.base;
     }

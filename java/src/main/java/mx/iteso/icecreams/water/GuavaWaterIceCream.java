@@ -4,12 +4,14 @@ import mx.iteso.icecreams.IceCream;
 
 
 /**
- * Created by Margarita Jauregui
+ * Created by Margarita Jauregui.
  * date: Nov 5, 2019
  */
 public class GuavaWaterIceCream extends IceCream {
-
-    public GuavaWaterIceCream(){
+    /**
+     * Class constructor for water-guava IceCream.
+     */
+    public GuavaWaterIceCream() {
         base = "Water";
         flavor = "Guava";
     }

@@ -16,54 +16,72 @@ import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
 
 
 /**
- * Created by Margarita Jauregui
+ * Created by Margarita Jauregui.
  * date: Nov 5, 2019
  */
 public abstract class IceCreamStore {
+    /**
+     * Creates milk-base IceCream object with selected flavor.
+     * @param flavor selected
+     * @return new IceCream object
+     */
+    public IceCream createMilkIceCream(final String flavor) {
 
-    public IceCream createMilkIceCream(String flavor){
-
-        if(flavor.equals("Strawberry")){
+        if (flavor.equals("Strawberry")) {
             return new StrawberryMilkIceCream();
-        } else if (flavor.equals("Pineapple")){
+        } else if (flavor.equals("Pineapple")) {
             return new PineappleMilkIceCream();
-        } else if (flavor.equals("Mango")){
+        } else if (flavor.equals("Mango")) {
             return new MangoMilkIceCream();
-        } else if (flavor.equals("Guava")){
+        } else if (flavor.equals("Guava")) {
             return new GuavaMilkIceCream();
         }
         return null;
     }
 
-    public IceCream createWaterIceCream(String flavor){
+    /**
+     * Creates water-based IceCream object with selected flavor.
+     * @param flavor selected
+     * @return new IceCream object
+     */
+    public IceCream createWaterIceCream(final String flavor) {
 
-        if(flavor.equals("Strawberry")){
+        if (flavor.equals("Strawberry")) {
             return new StrawberryWaterIceCream();
-        } else if (flavor.equals("Pineapple")){
+        } else if (flavor.equals("Pineapple")) {
             return new PineappleWaterIceCream();
-        } else if (flavor.equals("Mango")){
+        } else if (flavor.equals("Mango")) {
             return new MangoWaterIceCream();
-        } else if (flavor.equals("Guava")){
+        } else if (flavor.equals("Guava")) {
             return new GuavaWaterIceCream();
         }
         return null;
     }
 
-    public IceCream createYogurtIceCream(String flavor){
+    /**
+     * Creates yogurt-based IceCream object with selected flavor.
+     * @param flavor selected
+     * @return new IceCream object
+     */
+    public IceCream createYogurtIceCream(final String flavor) {
 
-        if(flavor.equals("Strawberry")){
+        if (flavor.equals("Strawberry")) {
             return new StrawberryYogurtIceCream();
-        } else if (flavor.equals("Pineapple")){
+        } else if (flavor.equals("Pineapple")) {
             return new PineappleYogurtIceCream();
-        } else if (flavor.equals("Mango")){
+        } else if (flavor.equals("Mango")) {
             return new MangoYogurtIceCream();
-        } else if (flavor.equals("Guava")){
+        } else if (flavor.equals("Guava")) {
             return new GuavaYogurtIceCream();
         }
         return null;
     }
 
-    public void prepareCone(final String flavor){
+    /**
+     * Prepares IceCream of selected flavor.
+     * @param flavor selected
+     */
+    public void prepareCone(final String flavor) {
         IceCream iceCream = createIceCream(flavor);
         Cone cone = new Cone();
 
@@ -73,6 +91,11 @@ public abstract class IceCreamStore {
 
     }
 
+    /**
+     * IceCream object creation.
+     * @param flavor selected
+     * @return new IceCream object
+     */
     public abstract IceCream createIceCream(String flavor);
 
 }

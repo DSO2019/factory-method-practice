@@ -4,11 +4,14 @@ import mx.iteso.icecreams.IceCream;
 
 
 /**
- * Created by Margarita Jauregui
+ * Created by Margarita Jauregui.
  * date: Nov 5, 2019
  */
 public class StrawberryYogurtIceCream extends IceCream {
-    public StrawberryYogurtIceCream(){
+    /**
+     * Class constructor for yogurt-strawberry IceCream.
+     */
+    public StrawberryYogurtIceCream() {
         base = "Yogurt";
         flavor = "Strawberry";
     }

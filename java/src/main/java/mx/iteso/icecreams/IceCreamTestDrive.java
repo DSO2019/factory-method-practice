@@ -7,25 +7,39 @@ import mx.iteso.icecreams.stores.YogurtIceCreamStore;
 
 
 /**
- * Created by Margarita Jauregui
+ * Created by Margarita Jauregui.
  * date: Nov 5, 2019
  */
-public class IceCreamTestDrive {
-    public static void main(String[] args) {
+public final class IceCreamTestDrive {
+    /**
+     * Class constructor.
+     */
+    private IceCreamTestDrive() {
+
+    }
+
+    /**
+     * Main methods.
+     * @param args input
+     */
+    public static void main(final String[] args) {
         IceCreamStore waterStore = new WaterIceCreamStore();
         IceCreamStore milkStore = new MilkIceCreamStore();
         IceCreamStore yogurtStore = new YogurtIceCreamStore();
 
        IceCream waterIceCream = waterStore.createIceCream("Mango");
-       System.out.println("First Ice Cream is: " + waterIceCream.getBase() + "-" + waterIceCream.getFlavor());
+       System.out.println("First Ice Cream is: " + waterIceCream.getBase()
+             +  "-" + waterIceCream.getFlavor());
        waterIceCream.prepare();
 
        IceCream milkIceCream = milkStore.createIceCream("Strawberry");
-       System.out.println("Second Ice Cream is: " + milkIceCream.getBase() + "-" + milkIceCream.getFlavor());
+       System.out.println("Second Ice Cream is: " + milkIceCream.getBase()
+               + "-" + milkIceCream.getFlavor());
        milkIceCream.prepare();
 
        IceCream yogurtIceCream = yogurtStore.createIceCream("Pineapple");
-       System.out.println("Third Ice Cream is: " + yogurtIceCream.getBase() + "-" + yogurtIceCream.getFlavor());
+       System.out.println("Third Ice Cream is: " + yogurtIceCream.getBase()
+               + "-" + yogurtIceCream.getFlavor());
        yogurtIceCream.prepare();
 
 
