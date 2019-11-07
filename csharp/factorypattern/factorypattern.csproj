@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('packages\NUnit.3.12.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C5BD4B5-6C16-4F19-BD5D-0FAAE641DFA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>factorypattern</RootNamespace>
+    <AssemblyName>factorypattern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="main\Cone.cs" />
+    <Compile Include="main\IceCreamStore.cs" />
+    <Compile Include="main\icecreams\IceCream.cs" />
+    <Compile Include="main\icecreams\milk\GuavaMilkIceCream.cs" />
+    <Compile Include="main\icecreams\milk\MangoMilkIceCream.cs" />
+    <Compile Include="main\icecreams\milk\PineappleMilkIceCream.cs" />
+    <Compile Include="main\icecreams\milk\StrawberryMilkIceCream.cs" />
+    <Compile Include="main\icecreams\water\GuavaWaterIceCream.cs" />
+    <Compile Include="main\icecreams\water\MangoWaterIceCream.cs" />
+    <Compile Include="main\icecreams\water\PineappleWaterIceCream.cs" />
+    <Compile Include="main\icecreams\water\StrawberryWaterIceCream.cs" />
+    <Compile Include="main\icecreams\yogurt\GuavaYogurtIceCream.cs" />
+    <Compile Include="main\icecreams\yogurt\MangoYogurtIceCream.cs" />
+    <Compile Include="main\icecreams\yogurt\PineappleYogurtIceCream.cs" />
+    <Compile Include="main\icecreams\yogurt\StrawberryYogurtIceCream.cs" />
+    <Compile Include="main\stores\MilkIceCreamStore.cs" />
+    <Compile Include="main\stores\WaterIceCreamStore.cs" />
+    <Compile Include="main\stores\YogurtIceCreamStore.cs" />
+    <Compile Include="test\ConeTest.cs" />
+    <Compile Include="test\icecreams\IceCreamTest.cs" />
+    <Compile Include="test\IceCreamTestDrive.cs" />
+    <Compile Include="test\stores\MilkIceCreamStoreTest.cs" />
+    <Compile Include="test\stores\WaterIceCreamStoreTest.cs" />
+    <Compile Include="test\stores\YogurtIceCreamStoreTest.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit.3.12.0\build\NUnit.props'))" />
+  </Target>
+</Project>

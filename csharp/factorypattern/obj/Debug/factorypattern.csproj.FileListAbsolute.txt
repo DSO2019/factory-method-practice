@@ -1,0 +1,11 @@
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\obj\Debug\factorypattern.csprojAssemblyReference.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\obj\Debug\factorypattern.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\factorypattern.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\nunit.framework.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\nunit.framework.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\nunit.framework.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\obj\Debug\factorypattern.csproj.CopyComplete
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\obj\Debug\factorypattern.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\factorypattern.dll.config
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\bin\Debug\factorypattern.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\factory-method-practice\csharp\factorypattern\obj\Debug\factorypattern.dll
