@@ -18,12 +18,15 @@ public class IceCreamTestDrive {
 
        IceCream waterIceCream = waterStore.createIceCream("Mango");
        System.out.println("First Ice Cream is: " + waterIceCream.getBase() + "-" + waterIceCream.getFlavor());
+       waterIceCream.prepare();
 
        IceCream milkIceCream = milkStore.createIceCream("Strawberry");
        System.out.println("Second Ice Cream is: " + milkIceCream.getBase() + "-" + milkIceCream.getFlavor());
+       milkIceCream.prepare();
 
        IceCream yogurtIceCream = yogurtStore.createIceCream("Pineapple");
        System.out.println("Third Ice Cream is: " + yogurtIceCream.getBase() + "-" + yogurtIceCream.getFlavor());
+       yogurtIceCream.prepare();
 
 
     }

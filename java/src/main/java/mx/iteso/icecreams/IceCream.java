@@ -19,7 +19,7 @@ public abstract class IceCream {
     }
 
     public void prepare(){
-        System.out.println("Preparing " + this.flavor + "ice cream");
+        System.out.println("Preparing " + this.getBase() + "-" + this.getFlavor() + " ice cream");
         System.out.println("Adding toppings...");
         for (int i = 0; i < toppings.size(); i++){
             System.out.println("    " + toppings.get(i));
