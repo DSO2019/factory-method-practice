@@ -1,4 +1,4 @@
-# factory-method-practice
+# strategy-practice
 
 * Refactor the code to have one abstract method to create the icecream
 * Create Water and Milk IceCream Store classes
