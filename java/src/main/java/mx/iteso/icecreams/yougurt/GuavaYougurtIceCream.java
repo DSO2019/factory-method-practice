@@ -1,0 +1,15 @@
+package mx.iteso.icecreams.yougurt;
+
+import mx.iteso.icecreams.IceCream;
+
+/**
+ *
+ */
+public class GuavaYougurtIceCream extends IceCream {
+    /**
+     * @return name
+     */
+    public final String getName() {
+        return "Guava Yougurt Icecream";
+    }
+}

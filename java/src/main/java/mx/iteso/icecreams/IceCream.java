@@ -7,5 +7,21 @@ package mx.iteso.icecreams;
  * Time: 2:24 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IceCream {
+public abstract class IceCream {
+    /**
+     *
+     */
+    private String name;
+
+    /**
+     * @param nombre nombre.
+     */
+    public final void setName(final String nombre) {
+        this.name = nombre;
+    }
+
+    /**
+     * @return name
+     */
+    public abstract String getName();
 }
