@@ -9,15 +9,17 @@ import mx.iteso.icecreams.water.GuavaWaterIceCream;
 import mx.iteso.icecreams.water.MangoWaterIceCream;
 import mx.iteso.icecreams.water.PineappleWaterIceCream;
 import mx.iteso.icecreams.water.StrawberryWaterIceCream;
+import mx.iteso.icecreams.yogurt.GuavaYogurtIceCream;
+import mx.iteso.icecreams.yogurt.MangoYogurtIceCream;
+import mx.iteso.icecreams.yogurt.PineappleYogurtIceCream;
+import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
+
 
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 10/17/18
- * Time: 1:21 PM
- * To change this template use File | Settings | File Templates.
+ * Created by Margarita Jauregui
+ * date: Nov 5, 2019
  */
-public class IceCreamStore {
+public abstract class IceCreamStore {
 
     public IceCream createMilkIceCream(String flavor){
 
@@ -47,20 +49,30 @@ public class IceCreamStore {
         return null;
     }
 
-    public void prepareCone(String base, String flavor){
-        IceCream iceCream = new IceCream();
+    public IceCream createYogurtIceCream(String flavor){
+
+        if(flavor.equals("Strawberry")){
+            return new StrawberryYogurtIceCream();
+        } else if (flavor.equals("Pineapple")){
+            return new PineappleYogurtIceCream();
+        } else if (flavor.equals("Mango")){
+            return new MangoYogurtIceCream();
+        } else if (flavor.equals("Guava")){
+            return new GuavaYogurtIceCream();
+        }
+        return null;
+    }
+
+    public void prepareCone(final String flavor){
+        IceCream iceCream = createIceCream(flavor);
         Cone cone = new Cone();
 
         cone.prepare();
-
-        if (base.equals("milk")){
-            iceCream = createMilkIceCream(flavor);
-        } else if (base.equals("water")){
-            iceCream = createWaterIceCream(flavor);
-        }
         cone.addIceCream(iceCream);
         cone.serve();
 
     }
+
+    public abstract IceCream createIceCream(String flavor);
 
 }

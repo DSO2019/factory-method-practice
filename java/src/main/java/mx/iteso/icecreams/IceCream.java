@@ -1,11 +1,36 @@
 package mx.iteso.icecreams;
 
+import mx.iteso.Cone;
+
+import java.util.ArrayList;
+
+
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 10/17/13
- * Time: 2:24 PM
- * To change this template use File | Settings | File Templates.
+ * Created by Margarita Jauregui
+ * date: Nov 5, 2019
  */
-public class IceCream {
+public abstract class IceCream {
+    public String flavor;
+    public String base;
+    public ArrayList toppings = new ArrayList();
+
+    public void serve() {
+        System.out.println("Serving...");
+    }
+
+    public void prepare(){
+        System.out.println("Preparing " + this.flavor + "ice cream");
+        System.out.println("Adding toppings...");
+        for (int i = 0; i < toppings.size(); i++){
+            System.out.println("    " + toppings.get(i));
+        }
+    }
+
+    public String getFlavor(){
+        return this.flavor;
+    }
+
+    public String getBase(){
+        return this.base;
+    }
 }
