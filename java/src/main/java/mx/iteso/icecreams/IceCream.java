@@ -15,16 +15,16 @@ public class IceCream {
 
     /**
      *
-     * @param flavor adds ice cream flavor.
+     * @param flavor2 adds ice cream flavor.
      */
-    public void setFlavor(final String flavor){
-        this.flavor = flavor;
+    public void setFlavor(final String flavor2) {
+        this.flavor = flavor2;
     }
 
     /**
-     * returns ice cream flavor.
+     * @return ice cream flavor.
      */
-    public String getFlavor(){
-        return this.flavor;
+    public String getFlavor() {
+        return flavor;
     }
 }

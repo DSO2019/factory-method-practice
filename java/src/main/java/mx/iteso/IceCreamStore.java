@@ -1,18 +1,6 @@
 package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.milk.GuavaMilkIceCream;
-import mx.iteso.icecreams.milk.MangoMilkIceCream;
-import mx.iteso.icecreams.milk.PineappleMilkIceCream;
-import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
-import mx.iteso.icecreams.water.GuavaWaterIceCream;
-import mx.iteso.icecreams.water.MangoWaterIceCream;
-import mx.iteso.icecreams.water.PineappleWaterIceCream;
-import mx.iteso.icecreams.water.StrawberryWaterIceCream;
-import mx.iteso.icecreams.yogurt.GuavaYogurtIceCream;
-import mx.iteso.icecreams.yogurt.MangoYogurtIceCream;
-import mx.iteso.icecreams.yogurt.PineappleYogurtIceCream;
-import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,7 +23,7 @@ public abstract class IceCreamStore {
      * @param flavor adds ice cream flavor.
      * @return creted cone.
      */
-    public Cone prepareCone(String base, String flavor){
+    public Cone prepareCone(final String base, final String flavor) {
         IceCream iceCream = new IceCream();
         Cone cone = new Cone();
 

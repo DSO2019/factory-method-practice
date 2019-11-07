@@ -2,11 +2,14 @@ package mx.iteso.icecreams.yogurt;
 
 import mx.iteso.icecreams.IceCream;
 
-public class GuavaYogurtIceCream extends IceCream{
+/**
+ * flavor Class.
+ */
+public class GuavaYogurtIceCream extends IceCream {
     /**
      * Object constructor, creates a guava yogurt ice cream.
      */
-    public GuavaYogurtIceCream(){
+    public GuavaYogurtIceCream() {
         setFlavor("Guava yogurt ice cream");
     }
 }

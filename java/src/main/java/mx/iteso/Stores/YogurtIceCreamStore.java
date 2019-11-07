@@ -18,14 +18,14 @@ public class YogurtIceCreamStore extends IceCreamStore {
      * @return created ice cream.
      */
     @Override
-    protected IceCream createIceCream(final String flavor){
-        if(flavor.equals("Strawberry")){
+    protected IceCream createIceCream(final String flavor) {
+        if (flavor.equals("Strawberry")) {
             return new StrawberryYogurtIceCream();
-        } else if(flavor.equals("Guava")){
+        } else if (flavor.equals("Guava")) {
             return new GuavaYogurtIceCream();
-        } else if(flavor.equals("Mango")){
+        } else if (flavor.equals("Mango")) {
             return new MangoYogurtIceCream();
-        } else if(flavor.equals("Pineapple")){
+        } else if (flavor.equals("Pineapple")) {
             return new PineappleYogurtIceCream();
         }
         return null;
