@@ -8,4 +8,19 @@ package mx.iteso.icecreams;
  * To change this template use File | Settings | File Templates.
  */
 public class IceCream {
+        /** Sabor del helado. */
+        private String flavor;
+
+        /**
+         * @param newFlavor nuevo sabor.
+         */
+        public void setFlavor(final String newFlavor) {
+            this.flavor = newFlavor;
+        }
+        /**
+         * @return sabor actual.
+         */
+        public String getFlavor() {
+            return this.flavor;
+        }
 }
